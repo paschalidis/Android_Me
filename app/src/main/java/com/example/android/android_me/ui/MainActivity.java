@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements MasterListFragmen
             nextButton.setVisibility(View.GONE);
 
             GridView gridView = (GridView) findViewById(R.id.images_grid_view);
-            gridView.setColumnWidth(2);
+            gridView.setNumColumns(2);
 
             // Only create new fragments when there is no previously saved state
             if (savedInstanceState == null) {
